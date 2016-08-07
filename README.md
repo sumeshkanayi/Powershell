@@ -1,4 +1,4 @@
-This script will read a csv file as input ,connect to the devices listed in the csv using a username and password at port 22 and will execute the command. Output also will be save at the same path
+This script will read a csv file as input ,connect to the devices listed in the csv using a username and password at port 22 and will execute the command. Output also will be saved at the same path
 
 Uses dot Net library
 

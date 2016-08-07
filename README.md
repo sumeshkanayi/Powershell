@@ -7,14 +7,21 @@ http://www.powershelladmin.com/wiki/SSH_from_PowerShell_using_the_SSH.NET_librar
 System requirement
 
 Powershell 4
+
 .Net 4
+
 Execution policy unrestricted
+
 ---How to run---
 
 Clone the repo
+
 Modify csv file as per your requirement
+
 modify the username ,password and command to execute as u wish
+
 run the script
+
 Errors will be logged under error.log
 
 

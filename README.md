@@ -20,7 +20,7 @@ Modify csv file as per your requirement
 
 modify the username ,password and command to execute as u wish
 
-run the script
+run the script from commandline (CD to the cloned repo)
 
 Errors will be logged under error.log
 

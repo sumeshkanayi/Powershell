@@ -1,0 +1,63 @@
+---
+- Name: cntlm
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/cntlm-0.92.3-setup.exe
+  InstallationCommandline: None
+  PostInstallationCommandline: mkdir sumesh && mkdir sia
+  ConfigurationFileUrl: None
+  PostInstallationBanner: Please refer cntlm configuration settings here https://jiraims.rm.imshealth.com/wiki/display/MLB/IMS+Proxy
+- Name: sbt
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/sbt-0.13.13.1.msi
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: scala
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/scala-2.12.0.msi
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: jdk
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/jdk-8u111-windows-x64.exe
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: docker
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/DockerToolbox-1.12.3.exe
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: babun
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/babun-1.2.0-dist.zip
+  InstallationCommandline: \babun-1.2.0\install.bat
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: maven
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/apache-maven-3.3.9-bin.zip
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: intellij
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/ideaIC-2016.exe
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: notepad++
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/npp.7.3.Installer.exe.exe
+  InstallationCommandline: None
+  PostInstallationCommandline: None
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+- Name: soaide
+  Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/IMS_SOA_IDE_20150602.zip
+  InstallationCommandline: None
+  PostInstallationCommandline: None 
+  ConfigurationFileUrl: None
+  PostInstallationBanner: None
+
+

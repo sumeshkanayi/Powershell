@@ -11,6 +11,7 @@ import ("fmt"
 "os"
 "os/exec"
 "github.com/cavaliercoder/grab"
+"github.com/mholt/archiver"
 "gopkg.in/yaml.v2"
 "strings"
 "log"
@@ -20,10 +21,10 @@ import ("fmt"
 )
  
 var directoryForDownloadingSoftware string
-var instalaltionCommandline string
+var installationCommandline string
 var swPackageExtension string
 var logFilePath string
-var swPostInstalaltionCommandline string
+var swPostInstallationCommandline string
 var swPostInstallationBanner string
 var configurationFileUrl string = "http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/softwareConfiguration.yaml"
 var unzipUrl string = "http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/unzip.exe"
@@ -39,7 +40,7 @@ func main() {
     softwareNameChannel :=make(chan string)
     softwareUrlChannel := make(chan string)
     swCommandlineChannel:=make(chan string)
-    swPostInstalaltionCommandlineChannel:=make(chan string)
+    swPostinstallationCommandlineChannel:=make(chan string)
     swPostInstallationBannerChannel :=make(chan string)
     //set the folder to download all packages . Get the Userprofile environment variable
  
@@ -49,7 +50,7 @@ func main() {
     flag.Parse()
     directoryForDownloadingSoftware = profilePath + "\\devopsPackage"
     logFilePath = directoryForDownloadingSoftware+"\\Installation.log"
-    fmt.Println("Starting installation and setup: Please find the logs at",logFilePath)
+    fmt.Println("Starting nstallation and setup: Please find the logs at",logFilePath)
     logFile,_ :=os.OpenFile(logFilePath,os.O_APPEND | os.O_CREATE | os.O_RDWR, 0666)
     defer logFile.Close()
     log.SetOutput(logFile)
@@ -82,7 +83,7 @@ func main() {
         softwareName := <-softwareNameChannel
         softwareUrl :=<-softwareUrlChannel
         swCommandline :=<-swCommandlineChannel
-        swPostInstalaltionCommandline:=<-swPostInstalaltionCommandlineChannel
+        swPostInstallationCommandline:=<-swPostInstallationCommandlineChannel
         swPostInstallationBanner:=<-swPostInstallationBannerChannel
         log.Println("Software Name: ", softwareName,"Software Url:", softwareUrl,"Commandline:", swCommandline)
         if softwareUrl == "" {

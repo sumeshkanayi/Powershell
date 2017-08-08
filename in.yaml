@@ -2,7 +2,7 @@
 - Name: cntlm
   Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/cntlm-0.92.3-setup.exe
   InstallationCommandline: None
-  PostInstallationCommandline: mkdir sumesh && mkdir sia
+  PostInstallationCommandline: None
   ConfigurationFileUrl: None
   PostInstallationBanner: Please refer cntlm configuration settings here https://jiraims.rm.imshealth.com/wiki/display/MLB/IMS+Proxy
 - Name: sbt
@@ -53,7 +53,7 @@
   PostInstallationCommandline: None
   ConfigurationFileUrl: None
   PostInstallationBanner: None
-- Name: soaide
+- Name: eclipse
   Url: http://cdtsdvo108p.rxcorp.com:8421/repository/DevOps/IMS_SOA_IDE_20150602.zip
   InstallationCommandline: None
   PostInstallationCommandline: None 
